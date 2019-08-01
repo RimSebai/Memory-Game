@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  text-align: center;
+  background-color: gray;
+}
+.loser-button,
+.winner-button {
+  margin: 2em;
+  width: 7em;
+  height: 3em;
+}
+.loserImage {
+  width: 40%;
+  height: 40%;
+}
+select {
+  width: 5em;
+  height: 2em;
+}
+.sign-fields {
+  margin: 2em;
+  width: 20em;
+  height: 3em;
+}
+.sign-in img {
+  margin: 20px;
+  width: 300px;
+  height: 200px;
+}
+label {
+  font-size: 20px;
+  margin-right: 10px;
+}
+.cards {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
+.cardValue {
+  font-size: 3em;
+}
+.play-button {
+  width: 7em;
+  height: 5em;
+}
+
+.flip-card {
+  flex-direction: row;
+  background-color: transparent;
+  width: 15em;
+  height: 18em;
+  perspective: 1000px;
+  margin: 10px;
+}
+
+.flip-card-inner-front {
+  transform: rotateY(180deg);
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  background-color: yellow;
+}
+.flip-card-inner-back {
+  transform: rotateY(360deg);
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  background-color: orangered;
+}
+.flip-card-front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 14em;
+}
